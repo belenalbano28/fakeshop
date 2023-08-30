@@ -80,16 +80,17 @@
                 <div class="col-md-4 summary">
                     <div><h5><b>Summary</b></h5></div>
                     <hr>
-                    <form>
+                    <form action="mail.php" method="post">
                         <p>A seller will contact you to make payment and shipping.</p>
-                        <input type="email" id="email" placeholder="Enter your email">
-                    </form>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    
                     <div class="row2" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
                         <div class="col">TOTAL PRICE</div>
                         
                         <div id="tp" class="col text-right">&euro; 0</div>
                     </div>
-                    <button class="btn">CHECKOUT</button>
+                    <button class="btn" type="submit">CHECKOUT</button>
+                </form>
                 </div>
             </div>
             

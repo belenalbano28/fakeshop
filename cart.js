@@ -7,7 +7,6 @@ cargarcarrito();
 function agregarcarrito(id){
     let products = JSON.parse(localStorage.getItem("product"));
     products.push(id);
-    console.log(products);
     localStorage.setItem("product", JSON.stringify(products));
     Swal.fire({
         position: 'center',
